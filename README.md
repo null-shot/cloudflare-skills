@@ -17,14 +17,49 @@ Copy the skill directories you need to the appropriate location for your agent:
 
 ## Skills
 
+### Core Platform
+
+| Skill | Useful for | Directory |
+|-------|------------|-----------|
+| workers | Core Workers fundamentals including handlers, configuration, and Service Bindings | `workers/` |
+| wrangler | Deploying and managing Workers, KV, R2, D1, Vectorize, Queues, Workflows | `wrangler/` |
+| web-perf | Auditing Core Web Vitals (FCP, LCP, TBT, CLS), render-blocking resources, network chains | `web-perf/` |
+| static-assets | Serve static files and single-page applications from Workers | `static-assets/` |
+
+### Storage & Databases
+
+| Skill | Useful for | Directory |
+|-------|------------|-----------|
+| d1-database | Serverless SQLite database for structured data at the edge | `d1-database/` |
+| durable-objects | Stateful coordination (chat rooms, games, booking), RPC, SQLite, alarms, WebSockets | `durable-objects/` |
+| kv | Eventually-consistent key-value storage distributed globally | `kv/` |
+| r2-storage | S3-compatible object storage for files, images, and large data | `r2-storage/` |
+| vectorize | Vector database for embeddings and semantic search at the edge | `vectorize/` |
+| hyperdrive | Connection pooling and caching for PostgreSQL and MySQL databases | `hyperdrive/` |
+
+### AI & Agents
+
 | Skill | Useful for | Directory |
 |-------|------------|-----------|
 | agents-sdk | Building stateful AI agents with state, scheduling, RPC, MCP servers, email, and streaming chat | `agents-sdk/` |
-| durable-objects | Stateful coordination (chat rooms, games, booking), RPC, SQLite, alarms, WebSockets | `durable-objects/` |
-| wrangler | Deploying and managing Workers, KV, R2, D1, Vectorize, Queues, Workflows | `wrangler/` |
-| web-perf | Auditing Core Web Vitals (FCP, LCP, TBT, CLS), render-blocking resources, network chains | `web-perf/` |
-| building-mcp-server-on-cloudflare | Building remote MCP servers with tools, OAuth, and deployment | `building-mcp-server-on-cloudflare/` |
+| workers-ai | Run AI inference at the edge with OpenAI SDK and Workers AI | `workers-ai/` |
 | building-ai-agent-on-cloudflare | Building AI agents with state, WebSockets, and tool integration | `building-ai-agent-on-cloudflare/` |
+| building-mcp-server-on-cloudflare | Building remote MCP servers with tools, OAuth, and deployment | `building-mcp-server-on-cloudflare/` |
+
+### Background Processing
+
+| Skill | Useful for | Directory |
+|-------|------------|-----------|
+| queues | Asynchronous message queues for reliable background processing | `queues/` |
+| workflows | Durable, long-running workflows with automatic retries and state persistence | `workflows/` |
+| analytics-engine | Write and query high-cardinality event data at scale with SQL | `analytics-engine/` |
+
+### Frameworks & Tools
+
+| Skill | Useful for | Directory |
+|-------|------------|-----------|
+| cloudflare-opennext | Deploy Next.js to Cloudflare Workers with full App Router, Pages Router, ISR, and SSG support | `cloudflare-opennext/` |
+| browser-rendering | Headless Chrome automation for web scraping, screenshots, PDFs, and testing at the edge | `browser-rendering/` |
 
 ## Usage
 
