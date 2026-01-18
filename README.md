@@ -30,6 +30,20 @@ Copy the skill directories you need to the appropriate location for your agent:
 
 When a request matches a skill's triggers, the agent loads and applies the relevant skill to provide accurate, up-to-date guidance.
 
+## Validating Skills
+
+To ensure skills follow the Agent Skills standard and have valid frontmatter, use the `skills-ref` validation tool:
+
+```bash
+# Validate a single skill
+npx skills-ref validate ./agents-sdk
+
+# Validate all skills
+npx skills-ref validate ./*/
+```
+
+This checks that each `SKILL.md` frontmatter is valid and follows all naming conventions.
+
 ## Resources
 
 - [Cloudflare Agents Documentation](https://developers.cloudflare.com/agents/)
